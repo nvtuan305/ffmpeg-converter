@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
 
         try {
             String command = ffmpegPath + " -i '" + demoVideoPath + "' '" + outVideoPath + "'";
-            command = "-f concat -safe 0 -i " + demoVideoPath + " -c copy " + demoVideoPath;
+            // command = "-f concat -safe 0 -i " + demoVideoPath + " -c copy " + demoVideoPath;
             Log.d(TAG, "Start with command: " + command);
             Process process = new ProcessBuilder("sh", "-c", command).start();
 
